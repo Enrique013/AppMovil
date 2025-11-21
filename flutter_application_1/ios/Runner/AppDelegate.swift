@@ -1,0 +1,17 @@
+import Flutter
+import UIKit
+import GoogleMaps   // importa GoogleMaps
+
+
+@main
+@objc class AppDelegate: FlutterAppDelegate {
+  override func application(
+    _ application: UIApplication,
+    didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?
+  ) -> Bool {
+    GMSServices.provideAPIKey("")   //  tu API Key
+    GeneratedPluginRegistrant.register(with: self)
+    return super.application(application, didFinishLaunchingWithOptions: launchOptions)
+  }
+}
+C:\Users\CC11\Documents\Gomis\Gomis\flutter_application_1\.dart_tool
